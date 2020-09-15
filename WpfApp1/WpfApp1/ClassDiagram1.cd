@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WpfApp1.Air_cleaner">
+    <Position X="2.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAQAIAQAAAAAAAAAQAAAAAAAgA=</HashCode>
+      <FileName>techs\Air_cleaner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfApp1.Air_condition">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="WpfApp1.Clima_tech" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.062" />
+        <Point X="5.25" Y="1.375" />
+        <Point X="1.25" Y="1.375" />
+        <Point X="1.25" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAABAAAAAAAIAQAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>techs\Air_condition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfApp1.Clima_tech" Collapsed="true">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAABQAAABABAAgAAMAQQQAEAAAgAAAAAAAAgAA=</HashCode>
+      <FileName>Clima_tech.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfApp1.Fan">
+    <Position X="4" Y="1.75" Width="1.5" />
+    <InheritanceLine Type="WpfApp1.Clima_tech" FixedToPoint="true">
+      <Path>
+        <Point X="5.25" Y="1.062" />
+        <Point X="5.25" Y="1.375" />
+        <Point X="4.75" Y="1.375" />
+        <Point X="4.75" Y="1.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAIAQAAAAAAAAAQAAAAAEAAA=</HashCode>
+      <FileName>techs\Fan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfApp1.Heater">
+    <Position X="6" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAADAAAAAAAIAQAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>techs\Heater.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WpfApp1.Humidifier">
+    <Position X="7.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAIASAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>techs\Humidifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

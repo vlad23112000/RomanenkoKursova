@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp1.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Detailed info about product" Height="450" Width="850" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.975,1.042" StartPoint="-0.163,-0.123">
+                <GradientStop Color="#FFF2F4C9" Offset="0.697"/>
+                <GradientStop Color="#FEF0C6BB" Offset="0.405"/>
+                <GradientStop Color="#FEC8F7E6" Offset="0.047"/>
+                <GradientStop Color="#FE33CFE5" Offset="0.606"/>
+                <GradientStop Color="#FFD2F6EE" Offset="0.924"/>
+                <GradientStop Color="#FFFFED7B" Offset="0.837"/>
+                <GradientStop Color="#FF9BCAFD" Offset="0.936"/>
+                <GradientStop Color="#FEB3FFB4" Offset="0.13"/>
+                <GradientStop Color="#FE3CE2DF" Offset="0.268"/>
+                <GradientStop Color="#FE65F4E1" Offset="0.505"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition Width="398.5"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Column="0" Grid.Row="0" Margin="0,0,202.8,0">
+            <Image x:Name="DImage" Height = "356.1" Width = "250.5" Canvas.Left="35.2"/>
+        </Canvas>
+        <Canvas Grid.Row="0" Margin="274.3,10,0,55.5" Grid.RowSpan="9" Grid.ColumnSpan="2" Width="569.7">
+            <TextBlock x:Name="Info" Margin="54.8,56.4,51.2,60" FontFamily="Yu Gothic UI Semibold" FontSize="14"/>
+        </Canvas>
+        <Canvas Grid.Row="2" Margin="3,143.4,0,0" Grid.Column="1">
+            <WrapPanel Grid.Row="2" HorizontalAlignment="Stretch" Margin="160,30,0,10">
+                <Button IsDefault="True" Click="Accept_Click" MinWidth="100" MinHeight="30" Margin="0,0,20,0" Content="&quot;Buy&quot; item" FontFamily="Yu Gothic UI Semibold" Background="#FFCDF7F3"/>
+                <Button IsCancel="True" Click="Cancel_Click" MinWidth="100" MinHeight="30" Content="Cancel" Background="#FFCDF2F7"/>
+            </WrapPanel>
+        </Canvas>
+    </Grid>
+</Window>
